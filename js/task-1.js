@@ -1,10 +1,10 @@
 'use strict';
 
 function slugify(title) {
-    title = title.toLowerCase();
-    title = title.split(' ');
-    title = title.join('-');
-    return title;
+    const titleLowerCase = title.toLowerCase();
+    const titleArrayLowerCase = titleLowerCase.split(' ');
+    const titleSlug = titleArrayLowerCase.join('-');
+    return titleSlug;
 }
 
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
